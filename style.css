@@ -1,0 +1,105 @@
+ /* Reset & General Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth; /* Enables smooth scrolling on navbar link clicks */
+      font-family: Arial, sans-serif;
+    }
+    body {
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Fixed Navigation Bar */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #1a1a1a;
+      padding: 15px 0;
+      z-index: 1000;
+    }
+    nav {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+    .logo {
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+    .nav-links a:hover {
+      color: #00bcd4;
+    }
+
+    /* Section Structure */
+    section {
+      min-height: 100vh;
+      padding: 100px 20px 40px; /* Top padding accommodates the fixed header */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .container {
+      max-width: 800px;
+      width: 100%;
+    }
+    h1, h2 {
+      margin-bottom: 15px;
+    }
+
+    /* Section Variations */
+    #home {
+      background-color: #f4f4f9;
+    }
+    #about {
+      background-color: #ffffff;
+    }
+    #contact {
+      background-color: #eef2f5;
+    }
+
+    /* Simple Form Styling */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    input, textarea, button {
+      padding: 12px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #1a1a1a;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #00bcd4;
+    }
